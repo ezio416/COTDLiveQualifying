@@ -7,6 +7,8 @@ float refreshProgress = 0;
 void Render()
 {
 #if TMNEXT
+    if (!windowVisible)
+        return;
 
     if (hasPermissionAndIsCOTDRunning())
     {
