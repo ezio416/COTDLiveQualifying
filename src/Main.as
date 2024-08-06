@@ -227,7 +227,7 @@ void addToAccountIds(array<string> fetchedPlayers)
     }
 }
 
-array<string> buildDisplayModeList(string clubName)
+array<string> buildDisplayModeList(const string &in clubName)
 {
     if(!settings_showClub && !settings_showFriends && !settings_showCustomPlayers)
     {
